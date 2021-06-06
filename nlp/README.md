@@ -4,7 +4,7 @@ conda create -n nlp jupyter scikit-learn matplotlib pandas
 
 conda activate nlp
 
-conda install -c pytorch pytorch torchtext
+conda install -c pytorch pytorch torchtext cudatoolkit=11.1 -c nvidia  # cf. https://pytorch.org/get-started/locally/
 conda install -c conda-forge sentencepiece pytorch-lightning
 pip install transformers
 ```
